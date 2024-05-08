@@ -1,0 +1,58 @@
+C:\Users\aleks\.jdks\corretto-21.0.3\bin\java.exe -Dmaven.multiModuleProjectDirectory=C:\Users\aleks\IdeaProjects\TestItLombok -Djansi.passthrough=true "-Dmaven.home=C:\Program Files\JetBrains\IntelliJ IDEA 2024.1.1\plugins\maven\lib\maven3" "-Dclassworlds.conf=C:\Program Files\JetBrains\IntelliJ IDEA 2024.1.1\plugins\maven\lib\maven3\bin\m2.conf" "-Dmaven.ext.class.path=C:\Program Files\JetBrains\IntelliJ IDEA 2024.1.1\plugins\maven\lib\maven-event-listener.jar" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.1.1\lib\idea_rt.jar=55136:C:\Program Files\JetBrains\IntelliJ IDEA 2024.1.1\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath "C:\Program Files\JetBrains\IntelliJ IDEA 2024.1.1\plugins\maven\lib\maven3\boot\plexus-classworlds-2.7.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2024.1.1\plugins\maven\lib\maven3\boot\plexus-classworlds.license" org.codehaus.classworlds.Launcher -Didea.version=2024.1.1 test
+[INFO] Scanning for projects...
+[INFO]
+[INFO] -----------------------< org.example:TestItTest >-----------------------
+[INFO] Building TestItTest 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- aspectj:1.14.0:compile (default) @ TestItTest ---
+[INFO] Showing AJC message detail for messages of types: [error, warning, fail]
+[WARNING] You aren't using a compiler supported by lombok, so lombok will not work and has been disabled.
+Your processor is: org.aspectj.org.eclipse.jdt.internal.compiler.apt.dispatch.BatchProcessingEnvImpl
+Lombok supports: OpenJDK javac, ECJ
+	<unknown source file>:<no line information>
+
+[INFO]
+[INFO] --- aspectj:1.14.0:test-compile (default) @ TestItTest ---
+[INFO] Showing AJC message detail for messages of types: [error, warning, fail]
+[WARNING] You aren't using a compiler supported by lombok, so lombok will not work and has been disabled.
+Your processor is: org.aspectj.org.eclipse.jdt.internal.compiler.apt.dispatch.BatchProcessingEnvImpl
+Lombok supports: OpenJDK javac, ECJ
+	<unknown source file>:<no line information>
+
+[ERROR] The method setA(String) is undefined for the type Pojo
+	C:\Users\aleks\IdeaProjects\TestItLombok\src\test\java\tests\SomeTest.java:15
+pojo.setA("123");
+     ^^^^
+
+[ERROR] The method getA() is undefined for the type Pojo
+	C:\Users\aleks\IdeaProjects\TestItLombok\src\test\java\tests\SomeTest.java:16
+System.out.println(pojo.getA());
+                        ^^^^
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.912 s
+[INFO] Finished at: 2024-05-08T10:46:31+03:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:aspectj-maven-plugin:1.14.0:test-compile (default) on project TestItTest: AJC compiler errors:
+[ERROR] error at
+[ERROR] pojo.setA("123");
+[ERROR]      ^^^^
+[ERROR] C:\Users\aleks\IdeaProjects\TestItLombok\src\test\java\tests\SomeTest.java:15:0::0 The method setA(String) is undefined for the type Pojo
+[ERROR] error at
+[ERROR] System.out.println(pojo.getA());
+[ERROR]                         ^^^^
+[ERROR] C:\Users\aleks\IdeaProjects\TestItLombok\src\test\java\tests\SomeTest.java:16:0::0 The method getA() is undefined for the type Pojo
+[ERROR]
+[ERROR] -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+
+Process finished with exit code 1
