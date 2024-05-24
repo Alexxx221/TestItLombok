@@ -3,7 +3,6 @@ package tests;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import pojo.Pojo;
-import ru.testit.annotations.ExternalId;
 import ru.testit.annotations.WorkItemIds;
 
 public class SomeTest {
@@ -18,8 +17,7 @@ public class SomeTest {
 //    }
 
     @Test
-    @ExternalId("someTest1")
-    @WorkItemIds("3")
+    @WorkItemIds("152411")
     public void someTest1() {
         Pojo pojo = new Pojo();
         pojo.setA("123");

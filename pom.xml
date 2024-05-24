@@ -18,9 +18,9 @@
         <maven-surefire-plugin.version>3.2.5</maven-surefire-plugin.version>
         <aspectj-maven-plugin.version>1.14.0</aspectj-maven-plugin.version>
 
-        <junit5.version>5.11.0-M1</junit5.version>
-        <testit-junit5-adapter.version>2.2.6</testit-junit5-adapter.version>
-        <aspectj.version>1.9.21</aspectj.version>
+        <junit5.version>5.11.0-M2</junit5.version>
+        <testit-junit5-adapter.version>1.5.3</testit-junit5-adapter.version>
+        <aspectj.version>1.9.22.1</aspectj.version>
         <lomobok.version>1.18.32</lomobok.version>
     </properties>
 
